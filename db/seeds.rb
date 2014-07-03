@@ -7,11 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 
-Product.Create!(title: 'programming Ruby 1.9 & 2.0',
-  description:
-   %{<p>Ruby is th fastedt growing and most exciting dynamic language
+Product.create!(title: 'Paper Airplanes!',
+                description:
+                %{<p>This is my own book of paper airplanes that I wrote
+                  as a kid! There are a lot of exciting designs, all of
+                  which I created myself from my homework!</p> },
+                image_url: 'planes.jpg',
+                price: 39.00)
+
+Product.create!(title: 'programming Ruby 1.9 & 2.0',
+                description:
+   %{<p>Ruby is th fastest growing and most exciting dynamic language
      out there if you need to get working programs delivered fast,
-     you should add ruby to your toolbox.
-   </p> },
+     you should add ruby to your toolbox.</p> },
    image_url: 'ruby.jpg',
-   price 49.95)
+   price: 49.95)
